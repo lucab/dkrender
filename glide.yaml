@@ -1,0 +1,30 @@
+package: github.com/lucab/dkrender
+import:
+- package: github.com/coreos/torcx
+  version: 0.1.0-alpha.3
+  subpackages:
+  - pkg/tar
+- package: github.com/pkg/errors
+  version: v0.8.0
+- package: github.com/Sirupsen/logrus
+  version: 0.11.4
+- package: github.com/opencontainers/go-digest
+  version: 1.0.0-rc0
+- package: github.com/docker/notary
+  version: 87d6d6cc2852155d863ca32e74c9887a6d45dc94
+  subpackages:
+  - client
+  - storage
+  - trustpinning
+  - tuf/data
+- package: github.com/docker/distribution
+  version: f86db6b22663a27ba4d278220b7e34be528b1e79
+  subpackages:
+  - context
+  - manifest/schema1
+  - manifest/schema2
+  - reference
+  - registry/client
+  - registry/client/auth
+  - registry/client/auth/challenge
+  - registry/client/transport
